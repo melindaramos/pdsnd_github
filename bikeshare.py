@@ -217,10 +217,12 @@ def main():
         i_max=int(df.count()[1])
       
         for i in range(0,i_max,5):
+            #start at i=0, count in increments of 5, and end at max count of dataframe
             raw = input('\nWould you like to see the raw data? Enter yes or no.\n')
             if raw.lower() != 'yes':
                 break
             print(df[i:i+5])
+            #display only five rows of raw data at a time
 
 
 
