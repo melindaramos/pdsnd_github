@@ -10,7 +10,7 @@ Bikeshare Python Project
 Part of Udacity's Programming for Data Science with Python course.
 
 ### Files used
-Include the files used
+This program references 3 CSV files called "chicago.csv", "new_york_city.csv", and "washington.csv"
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
