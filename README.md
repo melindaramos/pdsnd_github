@@ -13,5 +13,10 @@ Part of Udacity's Programming for Data Science with Python course.
 This program references 3 CSV files called "chicago.csv", "new_york_city.csv", and "washington.csv"
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I used the practice problem sets code to help generate the load_data function.
 
+I used this stack overflow link: https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds
+    to show me how to format seconds into days, hh:mm:ss format using datetime package.
+
+I used this link; https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DatetimeIndex.html#pandas.DatetimeIndex
+    to learn how to extract hour or day of week info from a timestamp in dataframe.
