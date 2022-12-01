@@ -60,7 +60,7 @@ def get_filters():
     valid_items.append('all')
     day = check_input(prompt,valid_items)
 
-    print('-'*40)
+    print('-'*60)
     return city, month, day
 
 def load_data(city, month, day):
@@ -126,7 +126,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def station_stats(df):
@@ -151,7 +151,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def trip_duration_stats(df):
@@ -170,7 +170,7 @@ def trip_duration_stats(df):
     print('Average trip duration: {} seconds, or {}'.format(avg_duration,datetime.timedelta(seconds=int(avg_duration))))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def user_stats(df):
@@ -201,7 +201,7 @@ def user_stats(df):
         print('\nNo Birth Year Data')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def main():
