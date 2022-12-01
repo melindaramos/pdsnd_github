@@ -44,6 +44,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('\nHello! Let\'s explore some US bikeshare data!\n')
+    print('For the following prompts, three character abbreviations are accepted.')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     prompt = 'Please select a city to evaluate: (Chicago, New York City, Washinton) : '
     valid_items = ['chicago','new york city','washington']
@@ -61,7 +62,7 @@ def get_filters():
     valid_items.append('all')
     day = check_input(prompt,valid_items)
 
-    print('-'*40)
+    print('-'*60)
     return city, month, day
 
 def load_data(city, month, day):
@@ -127,7 +128,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def station_stats(df):
@@ -152,7 +153,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def trip_duration_stats(df):
@@ -171,7 +172,7 @@ def trip_duration_stats(df):
     print('Average trip duration: {} seconds, or {}'.format(avg_duration,datetime.timedelta(seconds=int(avg_duration))))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def user_stats(df):
@@ -202,7 +203,7 @@ def user_stats(df):
         print('\nNo Birth Year Data')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def main():
