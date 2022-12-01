@@ -43,6 +43,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('\nHello! Let\'s explore some US bikeshare data!\n')
+    print('For the following prompts, three character abbreviations are accepted.')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     prompt = 'Please select a city to evaluate: (Chicago, New York City, Washinton) : '
     valid_items = ['chicago','new york city','washington']
