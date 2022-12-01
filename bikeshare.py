@@ -12,7 +12,8 @@ months = ['january', 'february', 'march', 'april', 'may', 'june']
 def check_input(prompt,valid_items):
     """
     This function provides a while loop to allow user to correct spelling mistakes
-    It also checks for input of 3 character common abbreviations
+    It also checks for input of 3 character common abbreviations, for example "sat"
+        will be interpreted as "Saturday".
     Args:
         (str) prompt: string prompt to ask user what type of data to filter by
         (list) valid_items: list of valid days, months, or cities to choose from
